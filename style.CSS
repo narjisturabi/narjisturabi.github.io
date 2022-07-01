@@ -1,0 +1,296 @@
+/* STYLE SECTIONING TAGS */
+* { /* Reset the space of the webpage */
+   margin: 0px;
+   padding: 0px;
+}
+
+body {
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #9CC4B2;
+
+  font-family: "Georgia", sans-serif; 
+  font-size: 20px;  
+  line-height: 1.5em;
+  color: #000000; 
+}
+
+header {
+  padding-top: 50px;   
+  padding-left: 30%;
+  padding-right: 30%;
+  margin: 1px;         
+}
+
+main { 
+  padding-top: 25px;      
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+ 
+  margin-left: 10%;
+  margin-right: 10%;          
+  
+}
+
+/* STYLE TEXT */
+h1 {
+  font-family: "Georgia", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: #ffffffff;
+  line-height: 60px;
+  letter-spacing: 12px;
+ 
+  margin: 2px;
+
+}
+
+h2 {
+  font-family: "Georgia", sans-serif;
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  line-height: 1.3em;
+  letter-spacing: 3px;
+  
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h3 {
+  font-family: "Times New Roman", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  color: #000000;
+  line-height: 1.3em;
+  
+  padding-bottom: 15px;
+}
+
+
+
+.subtitle{
+  text-align: center;
+  font-size: 25px;
+  
+  padding-top: 20px;
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  
+  padding-top: 10px;
+}
+
+a {
+  color: #ffffffff;
+  text-decoration: none;
+}
+  
+
+/* STYLE NAV BAR */
+ul.nav-bar {
+  list-style-type: none;        
+  overflow: hidden;
+  text-align:center;
+  background-color: #E76D83;
+
+
+}
+
+li.nav-item {
+  text-align: center;
+  display: inline-block;                 
+  padding: 5px;
+}
+
+li.nav-item a {   
+  font-size: 15px;
+  color: #000000;
+  
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  padding-right: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+li.nav-item a:hover {
+  background-color: #9CC4B2;
+  color: #000000;
+}
+
+
+/* STYLE IMAGES - Includes Make it responsive Key Feature */
+img {
+  display: block;      
+  width: 95%;          
+  height: auto;        
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+}
+
+.flex-container {      
+  display: flex;       
+  flex-direction: row; 
+  flex-wrap: nowrap; 
+
+} 
+
+.flex-item {           
+  flex-basis: 100%;    
+  margin: 1%;          
+}
+
+/* STYLE BUTTONS */
+#factBtn {
+  background: #9CC4B2;
+  border-style: none;
+  border-radius: 10px;
+
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+
+  color: #ffff;
+  font-size: 1em;
+}
+
+#scriptBtn {
+  font-family: "Georgia", sans-serif;
+  background: #ffffff;
+  border-style: none;
+  border-radius: 10px;
+
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  margin-left: 35%;
+  margin-right: 35%;
+
+  color: #000000;
+  font-size: 1em;
+}
+
+/* STYLE GENERATE A FACT KEY FEATURE */
+.genFact {
+  background: #E76D83;
+  border-radius: 10px;
+  border-style: none;
+
+  padding: 15px;
+
+  margin-top: 30px;
+  margin-left: 35%;
+  margin-right: 35%;
+
+  font-family: "Georgia", sans-serif;
+  font-size: 0.9em;
+  text-align: center;
+  line-height: 1.2em;
+  color: #000000;
+}
+
+#fact {
+  border-style: none;
+
+  padding: 15px;
+
+  margin-top: 30px;
+  margin-left: 15%;
+  margin-right: 15%;
+
+  font-family: "Georgia", sans-serif;
+  font-size: 2em;
+  text-align: center;
+  line-height: 1.2em;
+  color: #000000ff;
+
+}
+
+/* STYLE PERSONALIZE IT KEY FEATURE  */
+
+.scriptQues {
+  background: #E76D83;
+  border-radius: 10px;
+
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+
+  font-family: "Georgia", sans-serif;
+  font-size: 0.9em;
+  color: #000000;
+}
+
+.scriptItem{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  margin-right: 10px;
+
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+}
+
+input {
+  border-style: none;
+  border-radius: 5px;
+  width: 60%;
+}
+
+#scriptReturned {
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+
+  color: #FFFFFF;
+}
+
+/* STYLE MISC */
+.resources {
+  margin-top: 10px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.resources li {
+  margin-bottom: 15px;
+}
+
+/* MEDIA QUERIES  - Includes Make it responsive Key Feature */
+@media screen and (max-width: 850px) { /* Breakpoint 1 */
+  .flex-container {
+    flex-wrap: wrap; 
+  }
+
+  header {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  main { 
+  margin-left: 5%;
+  margin-right: 5%;          
+  }
+  
+  .genFact, #fact {
+  margin-top: 30px;
+  margin-left: 15%;
+  margin-right: 15%;
+  }
+
+  #fact {
+  font-size: 1.5em;
+  }
+
+}
+
